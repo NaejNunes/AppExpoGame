@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Pergunta1.unity
+    guid: 62e6d21ba5df60745b3d75dfb521caaf
+  - enabled: 1
+    path: Assets/Scenes/Pergunta2.unity
+    guid: 99282cd83ae1d624db2e1feedb58d08c
+  - enabled: 1
+    path: Assets/Scenes/Pergunta3.unity
+    guid: 7bc7a2b98f62b1c4692d5b42fd6550ed
+  - enabled: 1
+    path: Assets/Scenes/Pergunta4.unity
+    guid: 2a4098a7ed8d7044686a1ceeefbfc305
+  - enabled: 1
+    path: Assets/Scenes/Pergunta5.unity
+    guid: 7ebbb2ee0b1947a4892850d9762f2c07
+  - enabled: 1
+    path: Assets/Scenes/Pergunta6.unity
+    guid: f987d572e87ca8743a3a38c75ec44349
+  - enabled: 1
+    path: Assets/Scenes/Pergunta7.unity
+    guid: 64bca94f18db38e40b565d55cfc048da
+  - enabled: 1
+    path: Assets/Scenes/Pergunta8.unity
+    guid: f4c37cd89b40fae44a05dadb1d6d6f95
+  - enabled: 1
+    path: Assets/Scenes/Pergunta9.unity
+    guid: 696b5b2964431224dafefcdb7d686126
+  - enabled: 1
+    path: Assets/Scenes/Pergunta10.unity
+    guid: a6b316d87b14b864dad5176217b9f864
+  m_configObjects: {}
