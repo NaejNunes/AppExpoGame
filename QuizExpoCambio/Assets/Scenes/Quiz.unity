@@ -5363,6 +5363,8 @@ MonoBehaviour:
   - {fileID: 1512049831}
   descricaoPontosTxt: {fileID: 574106377}
   pontosTxt: {fileID: 50755667}
+  somCorreto: {fileID: 8300000, guid: 22a482363fd7d924ebac8c0f1a115efb, type: 3}
+  somErrado: {fileID: 8300000, guid: 7efa010ecad354e4a81bc03a9bd0e665, type: 3}
 --- !u!1 &678237254
 GameObject:
   m_ObjectHideFlags: 0
@@ -13437,7 +13439,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1714095427}
   m_OnClick:
     m_PersistentCalls:

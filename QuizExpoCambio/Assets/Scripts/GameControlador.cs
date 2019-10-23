@@ -9,7 +9,8 @@ public class GameControlador : MonoBehaviour
     public GameObject[] perguntas;
     private int pontos, contadorPergunta;
     public Text descricaoPontosTxt, pontosTxt;
-    
+    public AudioClip somCorreto, somErrado;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class GameControlador : MonoBehaviour
     //MÉTODO QUE ATRIBUIMOS AO BOTÃO COM A RESPOSTA CORRETA
     public void RespostaCorreta()
     {
+        AudioSource.PlayClipAtPoint(somCorreto, Camera.main.transform.position * Time.deltaTime);
         pontos += 1;
         TrocaPerguntas();
     }
@@ -38,6 +40,7 @@ public class GameControlador : MonoBehaviour
     //MÉTODO QUE ATRIBUIMOS AO BOTÃO COM A RESPOSTA ERRADA
     public void RespostaErrada()
     {
+        AudioSource.PlayClipAtPoint(somErrado, Camera.main.transform.position * Time.deltaTime);
         TrocaPerguntas();
     }
 
@@ -51,7 +54,7 @@ public class GameControlador : MonoBehaviour
         }
         else if (pontos > 3 && pontos < 8)
         {
-            descricaoPontosTxt.text = "Olha só você entende sobre esse assunto. \n Parabéns!";
+            descricaoPontosTxt.text = "Olha só você tem futuro. \n Parabéns!";
             pontosTxt.text = "" + pontos;
         }
         else if (pontos > 7 && pontos < 10)
@@ -61,7 +64,7 @@ public class GameControlador : MonoBehaviour
         }
         else if (pontos == 10)
         {
-            descricaoPontosTxt.text = "O senhor do NERDS me deixe ser seu discípulo!!!";
+            descricaoPontosTxt.text = "Ó senhor dos NERDS, me deixe ser seu discípulo!!!";
             pontosTxt.text = "" + pontos;
         }
     }
