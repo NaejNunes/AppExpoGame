@@ -16,6 +16,7 @@ public class GameControlador : MonoBehaviour
     void Start()
     {
         contadorPergunta = 1;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -50,22 +51,22 @@ public class GameControlador : MonoBehaviour
         if (pontos < 3)
         {
             descricaoPontosTxt.text = "Você foi um gerreiro, mesmo não sabendo muita coisa chegou até o final. \n Parabéns!";
-            pontosTxt.text = "" + pontos;
+            pontosTxt.text = "Sua pontuação foi:\n" + pontos;
         }
         else if (pontos > 3 && pontos < 8)
         {
             descricaoPontosTxt.text = "Olha só você tem futuro. \n Parabéns!";
-            pontosTxt.text = "" + pontos;
+            pontosTxt.text = "Sua pontuação foi:\n" + pontos;
         }
         else if (pontos > 7 && pontos < 10)
         {
             descricaoPontosTxt.text = "Opa! O que é isso? temos um Mestre na arte! \n Parabéns! VOCÊ É DE MAIS!!!";
-            pontosTxt.text = "" + pontos;
+            pontosTxt.text = "Sua pontuação foi:\n" + pontos;
         }
         else if (pontos == 10)
         {
             descricaoPontosTxt.text = "Ó senhor dos NERDS, me deixe ser seu discípulo!!!";
-            pontosTxt.text = "" + pontos;
+            pontosTxt.text = "Sua pontuação foi:\n" + pontos;
         }
     }
     //MÉTODO QUE TROCA AS PERGUNTAS
