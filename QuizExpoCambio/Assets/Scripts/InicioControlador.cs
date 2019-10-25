@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InicioControlador : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject Painel, Painel2;
     void Start()
     {
         
@@ -27,9 +27,24 @@ public class InicioControlador : MonoBehaviour
         SceneManager.LoadScene("Inicio");
     }
 
-    public void IniciarRA()
+    public void AbrirPainel()
     {
-        SceneManager.LoadScene("GameBoyColor");
+        Painel.SetActive(true);
+    }
+
+    public void FecharPainel()
+    {
+        Painel.SetActive(false);
+    }
+
+    public void AbrirPainel2()
+    {
+        Painel2.SetActive(true);
+    }
+
+    public void FecharPainel2()
+    {
+        Painel2.SetActive(false);
     }
 
     public void IniciarRecebaPremio()
@@ -40,5 +55,25 @@ public class InicioControlador : MonoBehaviour
     public void IniciarHome()
     {
         SceneManager.LoadScene("Inicio");
+    }
+
+    public void Atari()
+    {
+        SceneManager.LoadScene("Atari");
+    }
+
+    public void GameBoy()
+    {
+        SceneManager.LoadScene("GameBoyColor");
+    }
+
+    public void MegaDriver()
+    {
+        SceneManager.LoadScene("MegaDriver");
+    }
+
+    public void Nintendo()
+    {
+        SceneManager.LoadScene("Nintendo");
     }
 }
