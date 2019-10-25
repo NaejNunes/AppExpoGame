@@ -22,9 +22,14 @@ public class InicioControlador : MonoBehaviour
         SceneManager.LoadScene("Quiz");
     }
 
+    public void VoltaMenu()
+    {
+        SceneManager.LoadScene("Inicio");
+    }
+
     public void IniciarRA()
     {
-        SceneManager.LoadScene("RealidadeAumentada");
+        SceneManager.LoadScene("GameBoyColor");
     }
 
     public void IniciarRecebaPremio()
