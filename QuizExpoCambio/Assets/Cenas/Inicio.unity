@@ -508,7 +508,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 449235643}
-        m_MethodName: FecharPainel
+        m_MethodName: IniciarHome
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -600,8 +600,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5970ee49fa76ad4f8e0c647a94eb445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Painel: {fileID: 0}
-  Painel2: {fileID: 0}
+  PainelInicio: {fileID: 1214709165}
+  PainelRA: {fileID: 1791193940}
+  PainelPremio: {fileID: 1071382755}
 --- !u!1 &470438545
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +997,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 449235643}
-        m_MethodName: FecharPainel2
+        m_MethodName: FecharRecebaPremio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1485,7 +1486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1214709166
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1798,7 +1799,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 449235643}
-        m_MethodName: AbrirPainel2
+        m_MethodName: IniciarRecebaPremio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2152,7 +2153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.5, y: -224.8}
+  m_AnchoredPosition: {x: 10.5, y: -224.79999}
   m_SizeDelta: {x: 794.7, y: 1561.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1753022765
@@ -2207,7 +2208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1791193941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2681,7 +2682,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 449235643}
-        m_MethodName: AbrirPainel
+        m_MethodName: AbrirPainelRA
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

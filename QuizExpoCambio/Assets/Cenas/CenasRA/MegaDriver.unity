@@ -445,7 +445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 432, y: -455}
+  m_AnchoredPosition: {x: 209, y: -553}
   m_SizeDelta: {x: 224, y: 113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746810817
@@ -502,6 +502,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, Unity.ugui, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &746810818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +522,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -529,7 +533,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &746810819
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -618,8 +621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5970ee49fa76ad4f8e0c647a94eb445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Painel: {fileID: 0}
-  Painel2: {fileID: 0}
+  PainelInicio: {fileID: 0}
+  PainelRA: {fileID: 0}
+  PainelPremio: {fileID: 0}
 --- !u!114 &806637387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,6 +805,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, Unity.ugui,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
@@ -1042,12 +1048,12 @@ PrefabInstance:
     - target: {fileID: 3893489286767811477, guid: 407b1d162ff88c84aa38b8f512d2099d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.114
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 3893489286767811477, guid: 407b1d162ff88c84aa38b8f512d2099d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.465
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 3893489286767811477, guid: 407b1d162ff88c84aa38b8f512d2099d,
         type: 3}

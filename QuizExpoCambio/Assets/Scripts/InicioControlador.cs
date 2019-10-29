@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InicioControlador : MonoBehaviour
 {
-    public GameObject Painel, Painel2;
+    public GameObject PainelInicio, PainelRA, PainelPremio;
     void Start()
     {
         
@@ -26,30 +26,29 @@ public class InicioControlador : MonoBehaviour
     {
         SceneManager.LoadScene("Inicio");
     }
-
-    public void AbrirPainel()
+    public void AbrirPainelRA()
     {
-        Painel.SetActive(true);
+        PainelInicio.SetActive(false);
+        PainelRA.SetActive(true);
     }
 
-    public void FecharPainel()
+    public void FecharPainelRA()
     {
-        Painel.SetActive(false);
-    }
+        PainelRA.SetActive(false);
+        PainelInicio.SetActive(true);
 
-    public void AbrirPainel2()
-    {
-        Painel2.SetActive(true);
-    }
-
-    public void FecharPainel2()
-    {
-        Painel2.SetActive(false);
     }
 
     public void IniciarRecebaPremio()
     {
-        SceneManager.LoadScene("RecebePremio");
+        PainelInicio.SetActive(false);
+        PainelPremio.SetActive(true);
+    }
+
+     public void FecharRecebaPremio()
+    {
+        PainelPremio.SetActive(false);
+        PainelInicio.SetActive(true);
     }
 
     public void IniciarHome()
