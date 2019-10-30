@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InicioControlador : MonoBehaviour
 {
-    public GameObject PainelInicio, PainelRA, PainelPremio;
+    public GameObject painelInicio, painelRA, painelPremio, painelOpcao;
     void Start()
     {
         
@@ -28,32 +28,45 @@ public class InicioControlador : MonoBehaviour
     }
     public void AbrirPainelRA()
     {
-        PainelInicio.SetActive(false);
-        PainelRA.SetActive(true);
+        painelInicio.SetActive(false);
+        painelRA.SetActive(true);
     }
 
     public void FecharPainelRA()
     {
-        PainelRA.SetActive(false);
-        PainelInicio.SetActive(true);
+        painelRA.SetActive(false);
+        painelInicio.SetActive(true);
 
     }
 
     public void IniciarRecebaPremio()
     {
-        PainelInicio.SetActive(false);
-        PainelPremio.SetActive(true);
+        painelInicio.SetActive(false);
+        painelPremio.SetActive(true);
     }
 
      public void FecharRecebaPremio()
     {
-        PainelPremio.SetActive(false);
-        PainelInicio.SetActive(true);
+        painelPremio.SetActive(false);
+        painelInicio.SetActive(true);
     }
 
     public void IniciarHome()
     {
         SceneManager.LoadScene("Inicio");
+    }
+
+    public void AbrirPainelOpcao()
+    {
+        painelOpcao.SetActive(true);
+    }
+    public void FecharPainelOpcao()
+    {
+        painelOpcao.SetActive(false);
+    }
+    public void FecharAPP()
+    {
+        Application.Quit();
     }
 
     public void Atari()
