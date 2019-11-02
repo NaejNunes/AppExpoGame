@@ -25,8 +25,8 @@ public class GameControlador : MonoBehaviour
         //TROCA DE FASE CASO O TEMPO ACABE
         if (scriptTempo.segundos < 0)
         {
+             scriptTempo.segundos = 10f;
             TrocaPerguntas();
-            scriptTempo.segundos = 30;
         }    
     }
 
