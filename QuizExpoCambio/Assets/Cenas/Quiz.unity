@@ -4285,6 +4285,7 @@ MonoBehaviour:
   pontosTxt: {fileID: 1135130385}
   somCorreto: {fileID: 8300000, guid: 22a482363fd7d924ebac8c0f1a115efb, type: 3}
   somErrado: {fileID: 8300000, guid: 7efa010ecad354e4a81bc03a9bd0e665, type: 3}
+  temporizador: {fileID: 1445660649}
 --- !u!1 &689088937
 GameObject:
   m_ObjectHideFlags: 0
@@ -13287,8 +13288,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: IniciarHome
+      - m_Target: {fileID: 655734142}
+        m_MethodName: CenaInicio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
