@@ -28,7 +28,7 @@ public class GameControlador : MonoBehaviour
         //TROCA DE FASE CASO O TEMPO ACABE
         if (scriptTempo.segundos < 0)
         {
-             scriptTempo.segundos = 10f;
+            scriptTempo.segundos = 20f;
             TrocaPerguntas();
         }    
     }
@@ -37,7 +37,8 @@ public class GameControlador : MonoBehaviour
     public void RespostaCorreta()
     {
         AudioSource.PlayClipAtPoint(somCorreto, Camera.main.transform.position * Time.deltaTime);
-        pontos += 1;
+        scriptTempo.segundos = 20f;
+        pontos += 1;     
         TrocaPerguntas();
     }
 
@@ -45,6 +46,7 @@ public class GameControlador : MonoBehaviour
     public void RespostaErrada()
     {
         AudioSource.PlayClipAtPoint(somErrado, Camera.main.transform.position * Time.deltaTime);
+        scriptTempo.segundos = 20f;
         TrocaPerguntas();
     }
 

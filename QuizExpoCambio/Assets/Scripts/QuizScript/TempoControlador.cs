@@ -10,7 +10,7 @@ public class TempoControlador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       segundos = 10;
+       segundos = 20f;
     }
 
     // Update is called once per frame
