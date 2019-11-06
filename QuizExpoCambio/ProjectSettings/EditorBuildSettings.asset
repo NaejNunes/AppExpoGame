@@ -5,18 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Cenas/PreInicio.unity
+    guid: cd10e22f4597af24a8f7f4649fe3c25a
+  - enabled: 1
+    path: Assets/Cenas/Login.unity
+    guid: 661c00d1377661f40aa941f4c0661a45
   - enabled: 1
     path: Assets/Cenas/Inicio.unity
     guid: bf5a886c9318c7f44aa6bb3846326efe
   - enabled: 1
     path: Assets/Cenas/Quiz.unity
     guid: 3b983195fd2bace4e8c92f29e257fe87
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Cenas/CenasRA/Nintendo.unity
     guid: 3da0fcf236425f94b87aa39dcb3f337a
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/CenasRA/MegaDriver.unity
     guid: 35152ad40600c054eb96bd966fe822d0
+  - enabled: 1
+    path: Assets/Cenas/CenasRA/SaibaMais.unity
+    guid: 03f0f998123146540883369df89fc1ec
   m_configObjects: {}
